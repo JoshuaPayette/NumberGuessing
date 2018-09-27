@@ -12,6 +12,7 @@ public class NumberGuessing {
         board = new Scanner(System.in);
 
         randomNumber = (int)(Math.random()*100);
+        System.out.println(randomNumber);
         System.out.println("Welcome to the number guessing game. In this game");
         System.out.println("you are going to try and guess the number I am thinking of.");
         System.out.println("Ok start out by guessing a number 1-100");
