@@ -7,7 +7,6 @@ public class NumberGuessing {
         Scanner board;
         int randomNumber,attempts,guess;
         board = new Scanner(System.in);
-        String decision;
         do{
         randomNumber = (int)(Math.random()*100);
             attempts = 0;
@@ -32,7 +31,7 @@ public class NumberGuessing {
                 attempts++;
         }while(guess!=randomNumber&&attempts<7);
         System.out.println("Good game, a valiant effort. Would you like to play again?");
-        decision = board.nextLine();
+        board.nextLine();
         }while(!board.nextLine().equals("no"));
         System.out.println("Thanks for playing!");
 
